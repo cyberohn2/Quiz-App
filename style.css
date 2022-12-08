@@ -1,0 +1,66 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+h1,h2,p{
+    text-align: center;
+}
+header{
+    padding: 2rem 0;
+}
+form{
+    width: 700px;
+    max-width: 90%;
+    margin-inline: auto;
+    padding: 1rem .8rem;
+    border: 2px solid #ff6afc;
+    border-radius: .5rem;
+}
+form h2{
+    margin-bottom: 1.5rem;
+}
+div:not(div:last-of-type){
+    margin-bottom: 2rem;
+}
+label{
+    display:block;
+    margin-bottom: .2rem;
+}
+input,select{
+    width: 100%;
+    margin-inline: auto;
+    padding: .5rem .25rem;
+    margin-bottom: 1rem;
+    border: none;
+    background: none;
+    border-bottom:1px solid #888;
+    transition: border-bottom 500ms ease-out;
+}
+input:focus, select:focus{
+    outline: none;
+    border-bottom: 2px solid #ff2bf1;
+}
+#submit{
+    width: 60%;
+    padding: .6rem .3rem;
+    background: #ff2bf1;
+    color: #fff;
+    border: none;
+    border-radius: .4rem;
+    margin-bottom: .6rem;
+    margin-top: 1rem;
+}
+.err-message{
+    color: #ff0049;
+    font-weight: 600;
+}
+.error input{
+    border: 3px solid #ff0049;
+    border-radius:.5rem;
+}
+.success input{
+    border: 3px solid #00ff49;
+    border-radius:.5rem;
+}

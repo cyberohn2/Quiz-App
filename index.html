@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Edet John">
+    <title>Fun Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <header>
+    <h1>Fun Quiz</h1>
+    <p>Test your knowledge with this simple but tricky quiz</p>
+ </header>
+ <main>
+     <form id="data-form" action="/">
+         <h2>What type of questions do you want</h2>
+         <div class="input-control">
+         <label for="numofQ">Number of Questions</label>
+         <input value="hey" id="numofQ" type="text" placeholder="Example='10'">
+         <div class="err-message"></div>
+         </div>
+         <div class="input-control">
+         <label for="category">Category</label>
+         <select id="category">
+             <option>Any Category</option>
+             <option>General Knowledge</option>
+             <option>Sports</option>
+             <option>History</option>
+             <option>Art</option>    
+             <option>Celebrities</option>
+             <option>Vehicles</option>
+             <option>Animals</option>
+             <option>Geography</option>
+             <option>Science: Mathematics</option>
+             <option>Entertainment: Japanese Anime & Manga</option>
+             <option>Entertainment: Video Games</option>
+             <option>Entertainment: Film</option>
+             <option>Entertainment: Music</option>
+        </select>
+         <div class="err-message"></div>
+        </div>
+        <div class="input-control">
+        <label for="difficulty">Select Difficulty</label>
+        <select id="difficulty">
+            <option>Any Difficulty</option>
+            <option>Easy</option>
+            <option>Medium</option>
+            <option>Hard</option>
+        </select>
+         <div class="err-message"></div>
+        </div>
+        <div class="input-control">
+        <label for="type">Select Question Type</label>
+        <select id="type">
+            <option>AnyType</option>
+            <option>Multiple Choice</option>
+            <option>True/False</option>
+        </select>
+         <div class="err-message"></div>
+        </div>
+        <input id="submit" type="submit" value="Get Questions">
+     </form>
+ </main>
+ <script src="app.js"></script>
+</body>
+</html>
