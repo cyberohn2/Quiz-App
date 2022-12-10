@@ -12,30 +12,30 @@
     <p>Test your knowledge with this simple but tricky quiz</p>
  </header>
  <main>
-     <form id="data-form" action="/">
+     <form id="data-form">
          <h2>What type of questions do you want</h2>
          <div class="input-control">
          <label for="numofQ">Number of Questions</label>
-         <input value="hey" id="numofQ" type="text" placeholder="Example='10'">
+         <input id="numofQ" type="text" placeholder="Example='10'">
          <div class="err-message"></div>
          </div>
          <div class="input-control">
          <label for="category">Category</label>
          <select id="category">
-             <option>Any Category</option>
-             <option>General Knowledge</option>
-             <option>Sports</option>
-             <option>History</option>
-             <option>Art</option>    
-             <option>Celebrities</option>
-             <option>Vehicles</option>
-             <option>Animals</option>
-             <option>Geography</option>
-             <option>Science: Mathematics</option>
-             <option>Entertainment: Japanese Anime & Manga</option>
-             <option>Entertainment: Video Games</option>
-             <option>Entertainment: Film</option>
-             <option>Entertainment: Music</option>
+             <option data-index="Any Category">Any Category</option>
+             <option data-index="9">General Knowledge</option>
+             <option data-index="21">Sports</option>
+             <option data-index="23">History</option>
+             <option data-index="25">Art</option>    
+             <option data-index="26">Celebrities</option>
+             <option data-index="28">Vehicles</option>
+             <option data-index="27">Animals</option>
+             <option data-index="22">Geography</option>
+             <option data-index="19">Science: Mathematics</option>
+             <option data-index="31">Entertainment: Japanese Anime & Manga</option>
+             <option data-index="15">Entertainment: Video Games</option>
+             <option data-index="11">Entertainment: Film</option>
+             <option data-index="12">Entertainment: Music</option>
         </select>
          <div class="err-message"></div>
         </div>
@@ -52,15 +52,33 @@
         <div class="input-control">
         <label for="type">Select Question Type</label>
         <select id="type">
-            <option>AnyType</option>
-            <option>Multiple Choice</option>
-            <option>True/False</option>
+            <option data-type="AnyType">AnyType</option>
+            <option data-type="multiple">Multiple Choice</option>
+            <option data-type="boolean">True/False</option>
         </select>
          <div class="err-message"></div>
         </div>
-        <input id="submit" type="submit" value="Get Questions">
+        <input id="submit-form" type="submit" value="Get Questions">
      </form>
+     
+     <section class="question-box">
+         <h1>Your Questions</h1>
+         <div class="loading">
+             <div></div>
+         </div>
+         <ol class="question-list">
+            
+       <!--      <li>hey, what's your name</li>
+              <div class="ans-option">
+             <input type="radio">
+             <label>hello</label> -->
+            
+             </div>
+         </ol>
+     </section>
  </main>
+ 
+ 
  <script src="app.js"></script>
 </body>
 </html>
