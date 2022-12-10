@@ -17,6 +17,7 @@ form{
     padding: 1rem .8rem;
     border: 2px solid #ff6afc;
     border-radius: .5rem;
+    display: block;
 }
 form h2{
     margin-bottom: 1.5rem;
@@ -28,7 +29,7 @@ label{
     display:block;
     margin-bottom: .2rem;
 }
-input,select{
+form input,form select{
     width: 100%;
     margin-inline: auto;
     padding: .5rem .25rem;
@@ -42,7 +43,7 @@ input:focus, select:focus{
     outline: none;
     border-bottom: 2px solid #ff2bf1;
 }
-#submit{
+#submit-form, #submit, .new-quiz{
     width: 60%;
     padding: .6rem .3rem;
     background: #ff2bf1;
@@ -51,6 +52,7 @@ input:focus, select:focus{
     border-radius: .4rem;
     margin-bottom: .6rem;
     margin-top: 1rem;
+    margin-inline: auto;
 }
 .err-message{
     color: #ff0049;
@@ -63,4 +65,61 @@ input:focus, select:focus{
 .success input{
     border: 3px solid #00ff49;
     border-radius:.5rem;
+}
+.question-box{
+    display: none;
+    width:700px;
+    max-width:90%;
+    margin-inline:auto;
+}
+.question-box h1{
+    text-align: center;
+}
+.loading{
+    display: none;
+    background: #ff2bf1;
+    width: 5rem;
+    height:5rem;
+    border-radius:100%;
+    position: relative;
+    margin-inline: auto;
+    animation: rotate linear 1000ms infinite;
+    
+}
+.loading div{
+    background: #fff;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    position: absolute;
+    top: .5rem;
+    left: 1rem;
+}
+@keyframes rotate{
+    from{transform: rotateZ(0deg);}
+    to{transform: rotateZ(360deg);}
+}
+.question-box li{
+    margin-bottom: 1rem;
+}
+.question-box li::before{
+    content: "Q.";
+    margin-right: .5rem;
+}
+.question-box input{
+    width: unset;
+    display: inline-block;
+}
+.question-box label{
+    display: inline;
+    margin-right: .5rem;
+}
+.ans-option{
+    display: flex;
+   
+}
+.answer-update{
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
 }
